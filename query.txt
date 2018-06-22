@@ -1,0 +1,5 @@
+1. SELECT dept_no from departments left join on employees where (select count(*) from employees) >=0;
+result - error
+2. select ABS((select max(salary) from salaries) - (select min(salary) from salaries)) where hire_date from salaries;
+result - error
+3. select 
